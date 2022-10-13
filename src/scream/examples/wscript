@@ -1,0 +1,7 @@
+# -*- Mode: python; py-indent-offset: 4; indent-tabs-mode: nil; coding: utf-8; -*-
+
+def build(bld):
+    obj = bld.create_ns3_program('scream-example', ['scream'])
+    obj.source = 'scream-example.cc'
+    #obj = bld.create_ns3_program('screamex',['scream','applications','core','internet','network','mytrace','traffic-control'])
+    #obj.source = 'screamex.cc'
